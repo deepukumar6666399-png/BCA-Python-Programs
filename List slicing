@@ -1,0 +1,23 @@
+# Program to demonstrate list slicing and manipulation
+
+lst = [10, 20, 30, 40, 50]
+
+print("Original List:", lst)
+
+# Slicing
+print("First 3 elements:", lst[:3])
+print("Last 2 elements:", lst[-2:])
+print("Middle elements:", lst[1:4])
+
+# Manipulation
+lst.append(60)
+print("After append:", lst)
+
+lst.insert(2, 25)
+print("After insert:", lst)
+
+lst.remove(20)
+print("After remove:", lst)
+
+lst.reverse()
+print("After reverse:", lst)
