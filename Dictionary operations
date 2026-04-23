@@ -1,0 +1,22 @@
+# Program to perform dictionary operations
+
+# Creating dictionary
+student = {"name": "Rajul", "age": 20}
+print("Original Dictionary:", student)
+
+# Add element
+student["course"] = "BCA"
+print("After adding:", student)
+
+# Update element
+student["age"] = 21
+print("After updating age:", student)
+
+# Delete element
+del student["name"]
+print("After deleting name:", student)
+
+# Iteration
+print("\nDictionary elements:")
+for key, value in student.items():
+    print(key, ":", value)
