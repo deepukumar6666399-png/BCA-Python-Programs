@@ -1,0 +1,28 @@
+# Program to read contents of a file using read(), readline(), readlines()
+
+# Open file in read mode
+file = open("sample.txt", "r")
+
+print("=== Using read() ===")
+content = file.read()
+print(content)
+
+# Move cursor back to beginning
+file.seek(0)
+
+print("\n=== Using readline() ===")
+line1 = file.readline()
+line2 = file.readline()
+print("First line:", line1.strip())
+print("Second line:", line2.strip())
+
+# Move cursor back to beginning
+file.seek(0)
+
+print("\n=== Using readlines() ===")
+lines = file.readlines()
+for i, line in enumerate(lines, start=1):
+    print(f"Line {i}: {line.strip()}")
+
+# Close file
+file.close()
