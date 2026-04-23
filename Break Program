@@ -1,0 +1,19 @@
+# Program to demonstrate break, continue and pass
+
+print("Using continue (skip 3):")
+for i in range(1, 6):
+    if i == 3:
+        continue
+    print(i)
+
+print("\nUsing break (stop at 5):")
+for i in range(1, 6):
+    if i == 5:
+        break
+    print(i)
+
+print("\nUsing pass:")
+for i in range(1, 4):
+    if i == 2:
+        pass
+    print(i)
