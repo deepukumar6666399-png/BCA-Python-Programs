@@ -1,0 +1,25 @@
+# Program to demonstrate built-in functions
+
+# List functions
+lst = [10, 20, 30, 40]
+print("List:", lst)
+print("Length:", len(lst))
+print("Max:", max(lst))
+print("Min:", min(lst))
+print("Sum:", sum(lst))
+
+# String functions
+s = "python"
+print("\nString:", s)
+print("Upper:", s.upper())
+print("Lower:", s.lower())
+print("Length:", len(s))
+print("Count of 'o':", s.count('o'))
+
+# Dictionary functions
+d = {"a": 1, "b": 2, "c": 3}
+print("\nDictionary:", d)
+print("Keys:", d.keys())
+print("Values:", d.values())
+print("Items:", d.items())
+print("Length:", len(d))
