@@ -1,0 +1,14 @@
+import matplotlib.pyplot as plt
+
+x = [1, 2, 3, 4]
+y = [10, 20, 25, 30]
+
+# Line graph
+plt.plot(x, y)
+plt.title("Line Graph")
+plt.show()
+
+# Bar graph
+plt.bar(x, y)
+plt.title("Bar Graph")
+plt.show()
