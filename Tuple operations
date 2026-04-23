@@ -1,0 +1,27 @@
+# Program to demonstrate tuple operations and immutability
+
+# Creating a tuple
+t = (10, 20, 30, 40, 50)
+print("Original Tuple:", t)
+
+# Accessing elements
+print("First element:", t[0])
+print("Last element:", t[-1])
+
+# Slicing
+print("Sliced tuple (1 to 3):", t[1:4])
+
+# Iteration
+print("\nIterating through tuple:")
+for i in t:
+    print(i)
+
+# Immutability demonstration
+try:
+    t[0] = 100   # This will give error
+except TypeError:
+    print("\nTuple is immutable (cannot be changed)")
+
+# But we can create a new tuple
+t_new = t + (60, 70)
+print("New Tuple after adding elements:", t_new)
