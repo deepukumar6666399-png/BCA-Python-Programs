@@ -1,0 +1,29 @@
+# Demonstrating variable assignment and swapping values
+
+# Variable assignment
+a = 10
+b = 20
+
+print("Before swapping:")
+print("a =", a)
+print("b =", b)
+
+# --- Method 1: Using a third variable ---
+temp = a
+a = b
+b = temp
+
+print("\nAfter swapping (using third variable):")
+print("a =", a)
+print("b =", b)
+
+# Reassign values again for next method
+a = 10
+b = 20
+
+# --- Method 2: Without using third variable ---
+a, b = b, a
+
+print("\nAfter swapping (without third variable):")
+print("a =", a)
+print("b =", b)
