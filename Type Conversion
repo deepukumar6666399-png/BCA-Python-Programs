@@ -1,0 +1,29 @@
+# Demonstrating numeric data types and type conversion
+
+# Integer
+num_int = 10
+print("Integer value:", num_int)
+print("Type:", type(num_int))
+
+# Float
+num_float = 5.75
+print("\nFloat value:", num_float)
+print("Type:", type(num_float))
+
+# int → float
+a = float(num_int)
+print("\nConvert int to float:", a, "Type:", type(a))
+
+# float → int
+b = int(num_float)
+print("Convert float to int:", b, "Type:", type(b))
+
+# User input (safe)
+user_input = input("\nEnter a number: ")
+
+# Check input and convert
+if user_input.replace('.', '', 1).isdigit():
+    print("As Integer:", int(float(user_input)))
+    print("As Float:", float(user_input))
+else:
+    print("❌ Invalid input! Please enter a number only.")
