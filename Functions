@@ -1,0 +1,31 @@
+# Program using functions for string and list operations
+
+# Function for string operations
+def string_operations(s):
+    print("\n--- String Operations ---")
+    print("Original String:", s)
+    print("Reversed:", s[::-1])
+    print("Upper:", s.upper())
+    print("Length:", len(s))
+
+# Function for list operations
+def list_operations(lst):
+    print("\n--- List Operations ---")
+    print("Original List:", lst)
+
+    lst.append(100)
+    print("After append:", lst)
+
+    lst.sort()
+    print("After sort:", lst)
+
+    print("Length:", len(lst))
+    print("Maximum:", max(lst))
+    print("Minimum:", min(lst))
+
+# Main program
+string_input = input("Enter a string: ")
+list_input = list(map(int, input("Enter list elements separated by space: ").split()))
+
+string_operations(string_input)
+list_operations(list_input)
