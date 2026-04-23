@@ -1,0 +1,15 @@
+# Program to perform string operations
+
+s1 = "Hello"
+s2 = "Python"
+
+# Concatenation
+concat = s1 + " " + s2
+print("Concatenation:", concat)
+
+# Slicing
+print("Slicing (s1[1:4]):", s1[1:4])
+
+# Reversing
+reverse = s1[::-1]
+print("Reversed string:", reverse)
