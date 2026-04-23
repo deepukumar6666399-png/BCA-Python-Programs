@@ -1,0 +1,19 @@
+# Program to iterate through different data types
+
+# String
+string = "Python"
+print("String Iteration:")
+for ch in string:
+    print(ch)
+
+# List
+lst = [10, 20, 30, 40]
+print("\nList Iteration:")
+for item in lst:
+    print(item)
+
+# Dictionary
+d = {"Name": "Rajul", "Age": 20, "Course": "BCA"}
+print("\nDictionary Iteration:")
+for key, value in d.items():
+    print(key, ":", value)
