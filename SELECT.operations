@@ -1,0 +1,24 @@
+import sqlite3
+
+conn = sqlite3.connect("student.db")
+cursor = conn.cursor()
+
+# INSERT
+cursor.execute("INSERT INTO students (name, age) VALUES (?, ?)", ("Rajul", 20))
+
+# UPDATE
+cursor.execute("UPDATE students SET age = 21 WHERE name = 'Rajul'")
+
+# SELECT
+cursor.execute("SELECT * FROM students")
+rows = cursor.fetchall()
+
+print("Records:")
+for row in rows:
+    print(row)
+
+# DELETE
+cursor.execute("DELETE FROM students WHERE name = 'Rajul'")
+
+conn.commit()
+conn.close()
