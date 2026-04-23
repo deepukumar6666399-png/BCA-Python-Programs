@@ -1,0 +1,15 @@
+import numpy as np
+
+# Array creation
+arr = np.array([1, 2, 3, 4])
+
+print("Array:", arr)
+
+# Indexing
+print("First element:", arr[0])
+print("Last element:", arr[-1])
+
+# Arithmetic operations
+print("Addition:", arr + 5)
+print("Multiplication:", arr * 2)
+print("Square:", arr ** 2)
